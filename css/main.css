@@ -830,7 +830,7 @@ body {
 }
 .galley .slider-wrap .slider {
     display:flex;
-    width: 200%;
+    width: 400%;
 }
 .galley .slider-wrap .slider img {
     width: 100%;
