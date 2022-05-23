@@ -21,6 +21,12 @@ $(".header ul li a").click(function (event) {
 
 let headerOverly = document.querySelector(".header .container .overly")
 
+headerOverly.addEventListener("click" , function () {
+
+    this.remove()
+
+})
+
 let burgerIcon = document.querySelector(".header .container .burger-icon")
 
 burgerIcon.addEventListener("click" , function () {

@@ -106,7 +106,7 @@ body {
 }
 .header .container .logo img {
     max-width: 100%;
-    width: 200px;
+    width: 150px;
 }
 .header .container .burger-icon {
     display: none;
@@ -150,10 +150,18 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: fit-content;
     transform: translate(-50% , -50%);
     border-radius: 4px;
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 .header .container .overly .close-button {
     display: none;
@@ -162,8 +170,8 @@ body {
     .header .container .overly .close-button {
         display: block;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: -34px;
+        right: -10px;
         color: #fff;
         font-size: 20px;
         font-weight: bold;
@@ -231,7 +239,11 @@ body {
     font-weight: bold;
     padding: 10px;
 }
-
+@media (max-width: 540px) {
+    .header .container button {
+        display: none;
+    }
+}
 /* End Header  */
 /* Start Landing  */
 .landing .slider-wrap {
@@ -340,7 +352,7 @@ body {
 .setting-box {
     position: fixed;
     left: -250px;
-    top: 60px;
+    top:130px;
     width: 250px;
     height: 100vh;
     z-index: 99999;
@@ -414,6 +426,7 @@ body {
 /* End Setting-Box  */
 /* Start Feature  */
 .feature {
+    overflow: hidden;
     position: relative;
 }
 .feature .row .box {
@@ -498,6 +511,10 @@ body {
     color: var(--main-Color);
     border: 1px solid var(--main-Color);
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 /* End About  */
 /* Start Counte  */
