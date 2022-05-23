@@ -23,7 +23,7 @@ let headerOverly = document.querySelector(".header .container .overly")
 
 headerOverly.addEventListener("click" , function () {
 
-    this.remove()
+    this.classList.remove("active")
 
 })
 
